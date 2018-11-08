@@ -2,7 +2,7 @@
 #library(faraway)
 #library(MASS)
 
-setwd("D://Users//rsaaved//20181107")
+setwd("~/Projects/erre/")
 
 base<-read.csv(file="salario - gasto vivienda.csv",head= TRUE,sep=";")
 
@@ -12,9 +12,10 @@ base.lm <- lm(Gasto~.,data=base)
 
 summary(base.lm)
 
+#install.packages("car")
 library(car)
 
-#gráfico de residuos
+#gr?fico de residuos
 plot(base.lm$model$Salario,base.lm$residuals)
 abline(0,0)
 
