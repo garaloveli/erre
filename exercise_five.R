@@ -1,7 +1,6 @@
 setwd("~/Projects/erre/")
 
 #install.packages("readxl")
-
 #ipc_pdj<-read.xlsx("IPC-PDJ.xlsx", sheetIndex = 1)
 
 #install.packages("gdata")
